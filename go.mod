@@ -1,4 +1,4 @@
-module sefier.com/sfutil
+module github.com/irjeyaraj/sfutil
 
 go 1.17
 

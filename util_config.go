@@ -47,7 +47,7 @@ func ParseSystemConfig(conffile string, appName string) Sedconfig {
 	if runtime.GOOS == "windows" {
 		confloc = "etc" + Path_separator() + conffile
 	} else {
-		if File_is_exists("etc" + Path_separator() + appName + conffile) {
+		if File_is_exists("etc" + Path_separator() + appName + Path_separator() + conffile) {
 			confloc = "etc" + Path_separator() + appName + Path_separator() + conffile
 		} else if File_is_exists(Path_separator() + "home" + Path_separator() + CurrentUser() +
 			Path_separator() + "." + appName + "/" + conffile) {

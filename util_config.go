@@ -8,7 +8,7 @@
  * Created date: 3 June 2019
  */
 
-package util
+package sfutil
 
 import (
 	"fmt"

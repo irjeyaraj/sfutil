@@ -27,7 +27,3 @@ func ReadConfig(confFile string, confType string, appName string) (map[string]in
 	ConfigData = viper.AllSettings()
 	return ConfigData, err
 }
-
-func GetConfigValue(key string) string {
-	return ConfigData(key)
-}
